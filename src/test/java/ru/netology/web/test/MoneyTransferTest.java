@@ -36,8 +36,7 @@ class MoneyTransferTest {
     var loginPage = open("http://localhost:9999", LoginPageV3.class);
     var authInfo = DataHelper.getAuthInfo();
     var verificationPage = loginPage.validLogin(authInfo);
-    var verificationCode = DataHelper.getVerificationCodeFor(authInfo);
-    verificationPage.validVerify(verificationCode);
+    var verificationCode = DataHelper.getVerificationCodeFor(authInfo);verificationPage.validVerify(verificationCode);
   }
 }
 
